@@ -17,7 +17,6 @@
         "@babel/plugin-transform-object-assign",
         "lodash",
         "@babel/plugin-syntax-dynamic-import",
-        "@tencent/babel-plugin-import-bk-magic-vue",
         ["@babel/plugin-proposal-decorators", { "legacy": true }],
         "@babel/plugin-proposal-function-sent",
         "@babel/plugin-proposal-export-namespace-from",
