@@ -109,6 +109,15 @@
         font-size: 12px;
    }
     .page-view {
+        .task-status{
+            +.jsflow{
+                top: 41px;
+                position: absolute;
+                width: 100%;
+                height: auto;
+                bottom: 0;
+            }
+        }
         .jsflow{
             border: none;
         }

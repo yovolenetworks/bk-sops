@@ -66,6 +66,23 @@
         <section class="bk-block">
             <h2 class="bk-text-title">{{ i18n.paramInfo }}</h2>
             <div class="bk-text-list">
+                <van-cell title="复选框">
+                    <van-checkbox-group v-model="result">
+                        <van-checkbox
+                            v-for="(item) in list"
+                            :key="item"
+                            :name="item"
+                        >
+                            复选框 {{ item }}
+                        </van-checkbox>
+                    </van-checkbox-group>
+                </van-cell>
+                <van-cell title="单选框">
+                    <van-radio-group v-model="radio">
+                        <van-radio name="1">单选框 1</van-radio>
+                        <van-radio name="2">单选框 2</van-radio>
+                    </van-radio-group>
+                </van-cell>
                 <template v-for="item in templateConstants">
                     <van-field
                         v-if="item.custom_type === 'input'"
@@ -164,7 +181,10 @@
                 variableInputRule: {
                     required: true,
                     max: 20
-                }
+                },
+                list: ['a', 'b', 'c'],
+                result: ['a'],
+                radio: '1'
             }
         },
         mounted () {

@@ -24,7 +24,11 @@ import {
     Picker,
     DatetimePicker,
     Actionsheet,
-    Notify
+    Notify,
+    Checkbox,
+    CheckboxGroup,
+    Radio,
+    RadioGroup
 } from 'vant'
 import enUS from 'vant/lib/locale/lang/en-US'
 import zhCN from 'vant/lib/locale/lang/zh-CN'
@@ -47,6 +51,10 @@ Vue.use(NavBar)
     .use(DatetimePicker)
     .use(Actionsheet)
     .use(Notify)
+    .use(Checkbox)
+    .use(CheckboxGroup)
+    .use(Radio)
+    .use(RadioGroup)
 
 Vue.use(VueTippy)
 Vue.component('app-exception', Exception)
